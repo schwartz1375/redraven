@@ -35,7 +35,7 @@ windows64:
 
 windows32:
 	goversioninfo -icon=./resource/icon.ico ./resource/verioninfo.json
-	GOOS=windows GOARCH=amd64 ${BUILD} ${WIN_LDFLAGS} -o ${OUT_WIN} ${WIN_SRC}
+	GOOS=windows GOARCH=386 ${BUILD} ${WIN_LDFLAGS} -o ${OUT_WIN} ${WIN_SRC}
 	osslsigncode sign -certs server.pem -key server.key -i http://www.acme.com -in ${OUT_WIN} -out ${SIGNED_WIN_OUT}
 	osslsigncode verify ${SIGNED_WIN_OUT}
 
