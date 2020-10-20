@@ -42,7 +42,7 @@ note control-c will kill ncat but it will not terminate the process on the clien
     tasklist | findstr putty
     taskkill /F /PID <PID #>
 
-## OSPEC
+## OPSEC
 Things to consider for windows:
 * ```You are embedding credentials in the binary being deployed, take precautions!```
 * The name of the binary
