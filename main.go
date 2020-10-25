@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"redraven/shell"
+	"github.com/schwartz1375/redraven/shell"
 
 	"golang.org/x/crypto/ssh"
 )
