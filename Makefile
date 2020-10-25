@@ -40,4 +40,4 @@ windows32:
 	osslsigncode verify ${SIGNED_WIN_OUT}
 
 clean:
-	rm -f ${OUT_LINUX} ${OUT_WIN} ${WIN_RESOURCE} ${SIGNED_WIN_OUT}
+	rm -f ${OUT_LINUX} ${OUT_WIN} ${WIN_RESOURCE} ${SIGNED_WIN_OUT} ${WIN_RESOURCE}
