@@ -17,7 +17,7 @@ Once authenticated a process on the SSH server can interact with the service ans
 * osslsigncode (needed to sign the windows binary) if you don't care about signing you can comment these lines out in the Makefile.
 
 ## How to build
-The only thing you should need to modify is the Makefile for the variable "PATH_TO_PEM."  Note becasue the variables are injected at build time via the Makefile.  Second, one may need to uncomment the log.Fatal lines in the main.go for troubleshooting, these statements are commented out for threat emulation purpose to excerise the blue IR and RE teams.  Note you may also need to run "make depends" first to generate the generate self signed certificate.
+The only thing you should need to modify is the Makefile for the variable "PATH_TO_PEM."  Note the variables are injected at build time via the Makefile.  Second, one may need to uncomment the log.Fatal lines in the main.go for troubleshooting, these statements are commented out for threat emulation purpose to excerise the blue IR and RE teams.  Note you may also need to run "make depends" first to generate the generate self signed certificate.
 
 ### Example 1 
 You plan to use public Key auth, to do this you first need to set the PATH_TO_PEM variable in the Makefile and 
