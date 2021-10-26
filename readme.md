@@ -13,7 +13,7 @@ This opens a tunnel between the two endpoints and allows data to be exchanged th
 
 Once authenticated a process on the SSH server can interact with the service answering to port 8080 of the client. In this case a built in reverse shell that you can interact with via ncat on the ssh server.  As this is a outbound model vs a bind you don't need to deal with any NAT/firewall rules assuming outbound ssh is allowed.
 
-## Dependices
+## Dependencies
 * [Go](https://golang.org/) 1.13+
 * GNU make
 * [goversioninfo](https://github.com/josephspurrier/goversioninfo) (needed to add the windows resource infromation to the binary)
